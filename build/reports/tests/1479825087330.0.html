@@ -1,0 +1,145 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    <meta charset="UTF-8" />
+    <title>Pruduct registration</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/resources/style.css" />
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+	<meta charset="UTF-8" />
+	<title>Header</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/resources/style.css" />
+
+
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid" id="header">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">E-Shop Google</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="/ " id="homeHeader">Home</a></li>
+			
+				<li><a href="/admin/OrderCreatorListAdmin" id="orderListHeader">Order List
+					Admin</a></li>
+				<li><a href="/admin/CreateCategoryList " id="prodcutRegistrationHeader" style="background: rgb(46, 109, 164);">Product
+					registration</a>
+				</li>
+				<li><a href="/CreateNewCategoryAdminPage " id="createCategoryHeader">Crate new Category</a>
+				</li>
+				<li><a href="/admin/StatisticAdmin" id="statisticHeader">Statistic</a>
+				</li>
+				<li><a href="http://localhost:8081/JavaServerFaces/" id="statisticAPP">Statistic App</a>
+				</li>
+			
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a href="/MyCartUser " id="cartHeader">
+					<span class="glyphicon glyphicon-shopping-cart shopping-cart-image">
+						
+					</span>
+				</a>
+			</li>
+
+			<li><a href="/MyCartUser" id="priceHeader"></a></li>
+			
+				
+					<li><a href="/ProfileFormUser" id="profileHeader"><span class="glyphicon glyphicon-user"></span>My profile</a></li>
+					<li><a href="/LogOutSetrvlet "><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
+				
+				
+			
+		</ul>
+	</div>
+
+</nav>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+<div class="container">
+    <form method="POST" class="RegistrationForm2">
+
+
+
+        <input type="text" name="productName" placeholder="Name of product" class="inputText productInputClass" id="productNameInput" />
+
+
+        
+        <div class="divText1">
+        <h5>Select category list (select one):</h5>
+        </div>
+        <div class="divText1">
+        <select class="form-control" id="sel1" name="productCategory">
+            
+            <option value="Auto">Auto</option>
+            
+            <option value="Breadmaker">Breadmaker</option>
+            
+            <option value="Household Appliances">Household Appliances</option>
+            
+            <option value="Mama">Mama</option>
+            
+            <option value="Multi Cooker">Multi Cooker</option>
+            
+            <option value="Multikitchen">Multikitchen</option>
+            
+            <option value="Other Kitchen Appliances">Other Kitchen Appliances</option>
+            
+            <option value="Slow cooker">Slow cooker</option>
+            
+            <option value="Test">Test</option>
+            
+        </select>
+        </div>
+
+        <input type="text" name="quantity" placeholder="Quantity" class="inputText productInputClass" id="quantityProduct" />
+
+        <input type="text" name="price" placeholder="Price" class="inputText productInputClass" id="priceProduct" />
+
+        <input type="text" name="brand" placeholder="Brand" class="inputText productInputClass" id="brandProduct" />
+
+        <input type="text" name="power" placeholder="Power" class="inputText productInputClass" id="powerProduct" />
+
+        <input type="text" name="color" placeholder="Color" class="inputText productInputClass" id="colorProduct" />
+
+        <input type="text" name="weight" placeholder="Weight" class="inputText productInputClass" id="weightProduct" />
+
+        <br />
+        <div class="divText1"><h5>Description</h5></div>
+        
+        <div class="divText1">
+            <p><textarea rows="10" cols="45" name="description" id="Text1" class="productInputClass"></textarea></p>
+        </div>
+        <div class="divText1">
+        <button type="submit" name="registration" value="registo" id="productRegistrationButton">Add product to BD</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="../../resources/jsfiles/ProdcutRegistrationAdminJs.js"></script>
+
+
+</body></html>

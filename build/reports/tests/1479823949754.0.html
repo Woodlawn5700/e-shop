@@ -1,0 +1,155 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>Change Information</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/resources/style.css" />
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+	<meta charset="UTF-8" />
+	<title>Header</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/resources/style.css" />
+
+
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid" id="header">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">E-Shop Google</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="/ " id="homeHeader">Home</a></li>
+			
+				<li><a href="/admin/OrderCreatorListAdmin" id="orderListHeader">Order List
+					Admin</a></li>
+				<li><a href="/admin/CreateCategoryList " id="prodcutRegistrationHeader">Product
+					registration</a>
+				</li>
+				<li><a href="/CreateNewCategoryAdminPage " id="createCategoryHeader">Crate new Category</a>
+				</li>
+				<li><a href="/admin/StatisticAdmin" id="statisticHeader">Statistic</a>
+				</li>
+				<li><a href="http://localhost:8081/JavaServerFaces/" id="statisticAPP">Statistic App</a>
+				</li>
+			
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a href="/MyCartUser " id="cartHeader">
+					<span class="glyphicon glyphicon-shopping-cart shopping-cart-image">
+						
+					</span>
+				</a>
+			</li>
+
+			<li><a href="/MyCartUser" id="priceHeader"></a></li>
+			
+				
+					<li><a href="/ProfileFormUser" id="profileHeader"><span class="glyphicon glyphicon-user"></span>My profile</a></li>
+					<li><a href="/LogOutSetrvlet "><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
+				
+				
+			
+		</ul>
+	</div>
+
+</nav>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+<div class="container">
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th class="text-left">Client</th>
+        <th class="text-left">Payment Method</th>
+        <th class="text-left">Payment State</th>
+        <th class="text-left">Order State</th>
+        <th class="text-left">Delivery Method</th>
+        <th class="text-left">Date of order</th>
+        <th class="text-left">Comments</th>
+    </tr>
+    </thead>
+
+    
+
+    <tbody class="table-hover">
+    <tr>
+        <td class="text-left">111</td>
+        <td class="text-left">cash</td>
+        <td class="text-left">wait for payment</td>
+        <td class="text-left">sent</td>
+        <td class="text-left">delivery service</td>
+        <td class="text-left">2016-10-19</td>
+        <td class="text-left">Comments</td>
+    </tr>
+    </tbody>
+</table>
+
+<hr />
+
+<form action="/admin/OrderStatusChangerServlet" method="post">
+    <div class="container">
+        <div class="left">
+            <p>State of this order is  <strong>sent </strong></p>
+        </div>
+        <div class="center">
+            <p><select name="changeOrder" id="sort">
+                <option value="in the stock" id="inTheStoc">In the stock</option>
+                <option value="sent" id="sent">Sent</option>
+                <option value="delivered" id="dalivered">Delivered</option>
+            </select>
+            </p>
+        </div>
+        <div class="right">
+            <p>
+                <button type="submit" id="buttonStateOrder">Change Order State</button>
+            </p>
+        </div>
+    </div>
+</form>
+
+<hr />
+
+<form action="/admin/OrderPaymentStateChangerServlet" method="post">
+    <div class="container">
+        <div class="left">
+            <p>Payment state of order is <strong> wait for payment</strong> </p>
+        </div>
+        <div class="center">
+            <p><select name="cahngePaymentState" id="selectPaymentState">
+                <option value="paid">Paid</option>
+                <option value="wait for payment">Wait for payment</option>
+            </select>
+            </p>
+        </div>
+        <div class="right">
+            <p>
+                <button type="submit">Change Order State</button>
+            </p>
+        </div>
+    </div>
+</form>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+</body></html>

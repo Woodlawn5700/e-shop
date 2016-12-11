@@ -1,0 +1,810 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>OrderListAdmin</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/resources/style.css" />
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+	<meta charset="UTF-8" />
+	<title>Header</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/resources/style.css" />
+
+
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid" id="header">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">E-Shop Google</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="/ " id="homeHeader">Home</a></li>
+			
+				<li><a href="/admin/OrderCreatorListAdmin" id="orderListHeader" style="background: rgb(46, 109, 164);">Order List
+					Admin</a></li>
+				<li><a href="/admin/CreateCategoryList " id="prodcutRegistrationHeader">Product
+					registration</a>
+				</li>
+				<li><a href="/CreateNewCategoryAdminPage " id="createCategoryHeader">Crate new Category</a>
+				</li>
+				<li><a href="/admin/StatisticAdmin" id="statisticHeader">Statistic</a>
+				</li>
+				<li><a href="http://localhost:8081/JavaServerFaces/" id="statisticAPP">Statistic App</a>
+				</li>
+			
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a href="/MyCartUser " id="cartHeader">
+					<span class="glyphicon glyphicon-shopping-cart shopping-cart-image">
+						
+					</span>
+				</a>
+			</li>
+
+			<li><a href="/MyCartUser" id="priceHeader"></a></li>
+			
+				
+					<li><a href="/ProfileFormUser" id="profileHeader"><span class="glyphicon glyphicon-user"></span>My profile</a></li>
+					<li><a href="/LogOutSetrvlet "><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
+				
+				
+			
+		</ul>
+	</div>
+
+</nav>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+<div class="container">
+	<div class="row">
+
+		<div class="col-xs-12">
+			<h4>Sort by:</h4>
+			<a href="javascript: void(0)" class="sort-predicate2 btn btn-info" data-predicate="in the stock" id="inStockSort">Unprocessed
+				orders</a>
+			<a href="javascript: void(0)" class="sort-predicate2 btn btn-info" data-predicate="orderState" id="orderStateSort">Order
+				state</a>
+			<a href="javascript: void(0)" class="sort-predicate2 btn btn-info active" data-predicate="deliveryMethod" id="deliveryMethodSort">Delivery
+				method</a>
+			<a href="javascript: void(0)" class="sort-predicate2 btn btn-info" data-predicate="login" id="byClietnSort">By Client</a>
+			<a href="javascript: void(0)" class="sort-predicate2 btn btn-info" data-predicate="dateOfOrder" id="dateIfOrderSort">Date of
+				order</a>
+		</div>
+		<div id="orderDiv"><div id="orderDiv">
+			<table class="table table-hover">
+				<thead>
+				<tr>
+					<th class="text-left">Change information</th>
+					<th class="text-left">Client</th>
+					<th class="text-left">Payment Method</th>
+					<th class="text-left">Payment State</th>
+					<th class="text-left">Order State</th>
+					<th class="text-left">Delivery Method</th>
+					<th class="text-left">Date of order</th>
+					<th class="text-left">Comments</th>
+				</tr>
+				</thead>
+				
+				<tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="0" id="change_0">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">sent</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-11</td>
+					<td class="text-left">I would like to buy it!</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="1" id="change_1">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">111</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">fddf</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="2" id="change_2">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">111</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">sent</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="3" id="change_3">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya140</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">sent</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="4" id="change_4">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya140</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="5" id="change_5">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">111</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">delivery service</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="6" id="change_6">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">111</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">delivery service</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="7" id="change_7">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">111</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">delivery service</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="8" id="change_8">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">111</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">delivery service</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="9" id="change_9">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya140</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">delivery service</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="10" id="change_10">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya140</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">delivery service</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="11" id="change_11">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya140</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">delivery service</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="12" id="change_12">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya140</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">delivery service</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="13" id="change_13">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya140</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left"></td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="14" id="change_14">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya140</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="15" id="change_15">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-19</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="16" id="change_16">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-20</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="17" id="change_17">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">sk8mouse@bk.ru</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">sent</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-20</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="18" id="change_18">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-22</td>
+					<td class="text-left">I want to pick up it On Monday </td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="19" id="change_19">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-24</td>
+					<td class="text-left">Test</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="20" id="change_20">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Pavel122</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-24</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="21" id="change_21">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Pavel122</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-24</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="22" id="change_22">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-24</td>
+					<td class="text-left">Last Car
+</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="23" id="change_23">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-24</td>
+					<td class="text-left">Last car</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="24" id="change_24">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-24</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="25" id="change_25">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-10-29</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="26" id="change_26">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-11-02</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="27" id="change_27">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">sent</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-11-03</td>
+					<td class="text-left">testBuy</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="28" id="change_28">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-11-11</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="29" id="change_29">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">delivery service</td>
+					<td class="text-left">2016-11-16</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="30" id="change_30">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">sent</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-10-12</td>
+					<td class="text-left">Comments2</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="31" id="change_31">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Pavel122</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-10-23</td>
+					<td class="text-left">My first Order</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="32" id="change_32">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">delivered</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-10-24</td>
+					<td class="text-left">I wanna pick up it in morning</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="33" id="change_33">Change
+								information
+							</button>
+						</td>
+					<td class="text-left"></td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-10-27</td>
+					<td class="text-left">test</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="34" id="change_34">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya140</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">sent</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-11-04</td>
+					<td class="text-left">Final Spring Test</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="35" id="change_35">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya140</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-11-04</td>
+					<td class="text-left">final Spring test</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="36" id="change_36">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Pavel122</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-11-11</td>
+					<td class="text-left">Comments</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="37" id="change_37">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Pavel122</td>
+					<td class="text-left">cash</td>
+					<td class="text-left">wait for payment</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-11-13</td>
+					<td class="text-left">car gonna be on Monday</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="38" id="change_38">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">rnet1487@yandex,ru</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-11-16</td>
+					<td class="text-left">Comments435435</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="39" id="change_39">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">rnet1487@yandex,ru</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-11-16</td>
+					<td class="text-left">Comments435435</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="40" id="change_40">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">rnet1487@yandex,ru</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-11-16</td>
+					<td class="text-left">Comments435435</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="41" id="change_41">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">in the stock</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-11-20</td>
+					<td class="text-left">Test2</td>
+				</tr>
+				
+				</tbody><tbody class="table-hover">
+				<tr>
+						<td class="Button_add_to_card">
+							<button class="Change_information" type="button" name="orderButton" value="42" id="change_42">Change
+								information
+							</button>
+						</td>
+					<td class="text-left">Olya1409</td>
+					<td class="text-left">credit card</td>
+					<td class="text-left">paid</td>
+					<td class="text-left">sent</td>
+					<td class="text-left">pick up in the nearest shop</td>
+					<td class="text-left">2016-11-22</td>
+					<td class="text-left">Test34</td>
+				</tr>
+				
+				</tbody>
+			</table>
+		</div></div>
+	</div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="../../resources/jsfiles/OrderListAdminJs.js"></script>
+
+
+
+
+</body></html>

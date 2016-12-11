@@ -1,0 +1,2 @@
+2016-10-24 14:42:20,679 [ERROR] service.GetProfitForDate impossible dates at service.GetProfitForDate.getToNewFormat(GetProfitForDate.java:62)
+2016-10-24 14:44:57,876 [ERROR] service.GetProfitForDate impossible dates at service.GetProfitForDate.getToNewFormat(GetProfitForDate.java:62)

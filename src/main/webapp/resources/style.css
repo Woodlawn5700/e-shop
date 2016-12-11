@@ -1,0 +1,260 @@
+body {
+	background-image: url("/resources/bg4.png");
+}
+
+.regtd {
+	margin: 100%;
+	border: 50px;
+	border-color: #000000;
+}
+
+#sd {
+	width:300px;
+	height: 120px;
+	position: fixed;
+	left: 40%;
+	top:300px;
+	border: 1px double ;
+	box-shadow: 10px 10px 10px #5f6266;
+}
+#registrationform2 {
+	width:300px;
+	height: 120px;
+	position: fixed;
+	left: 40%;
+	top:300px;
+	border: 1px double ;
+	box-shadow: 10px 10px 10px #5f6266;
+}
+
+form .form-element {
+	margin: 5px;
+}
+
+#invalidePassword {
+	margin-left: 5px;
+	color: red;
+}
+
+form .form-element label {
+	float: left;
+	width: 90px;
+}
+
+
+
+.RegistrationForm {
+	left: 35%;
+	padding: 20px;
+	width: 410px;
+	height: 250px;
+	position: fixed;
+	top:250px;
+	border: 1px double ;
+	box-shadow: 10px 10px 10px #5f6266;
+}
+
+.RegistrationForm2 {
+	left: 35%;
+	padding: 20px;
+	width: 410px;
+	height: 600px;
+	position: fixed;
+	top:100px;
+	border: 1px double ;
+	box-shadow: 10px 10px 10px #5f6266;
+}
+
+
+#registrationButton2 {
+	border:1px dotted;
+	background-color: #FFFFFF;
+	margin: 10px;
+	margin-left: 30px;
+	width: 300px;
+}
+.divText1 {
+	margin: 10px;
+}
+#Text1 {
+	width: 100%;
+}
+
+
+#registrationButton2:hover{
+	background-color: #4E5066 ;
+	-webkit-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+
+}
+
+#invalideInputParams {
+	margin-left: 10%;
+	color: red;
+}
+
+.inputText {
+	margin: 10px;
+}
+
+.loginDiv {
+	margin-left: 10px;
+}
+
+.table .table-hover {
+	background-color: #e8e9ea;
+
+}
+
+#OrderButton{
+	margin-left: 37%;
+	width: 300px;
+}
+
+#plusOrder{
+	margin-left: 10px;
+}
+
+#delivery {
+	width: 49%;
+}
+
+#payment {
+	width: 49%;
+}
+
+#DeliveryMethod{
+	margin-left: 10px;
+}
+
+
+#createNewCategoryDiv{
+margin-top: 20%;
+}
+#createNewCategoryForm{
+	width: 430px;
+	border: 10px solid;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+#creaNEwCategoryRow {
+	padding: 10px;
+}
+
+#productNameInput {
+	width: 345px;
+
+}
+
+.sort-predicate.active{
+	background-color: #2e6da4;
+}
+
+.headerActive.active {
+	background-color: #2e6da4;
+}
+
+.categoryselectdiv{
+	margin: 10px;
+	width: 345px;
+}
+
+#productRegistrationButton{
+	margin-left: 30%;
+}
+
+.myCheckBox {
+	width: 50px;
+}
+
+section.range-slider {
+
+	width: 200px;
+	height: 35px;
+	text-align: left;
+}
+
+section.range-slider input {
+	pointer-events: none;
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+	top: 15px;
+	width: 200px;
+	outline: none;
+	height: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+section.range-slider input::-webkit-slider-thumb {
+	pointer-events: all;
+	position: relative;
+	z-index: 1;
+	outline: 0;
+}
+
+section.range-slider input::-moz-range-thumb {
+	pointer-events: all;
+	position: relative;
+	z-index: 10;
+	-moz-appearance: none;
+	width: 9px;
+}
+
+section.range-slider input::-moz-range-track {
+	position: relative;
+	z-index: -1;
+	background-color: rgba(0, 0, 0, 1);
+	border: 0;
+}
+section.range-slider input:last-of-type::-moz-range-track {
+	-moz-appearance: none;
+	background: none transparent;
+	border: 0;
+}
+section.range-slider input[type=range]::-moz-focus-outer {
+	border: 0;
+}
+
+#demo, #filterDiv{
+	display: none;
+}
+
+.sort-predicate2.active{
+	background-color: #2e6da4;
+}
+
+#errorPageDiv {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	z-index: 15;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -150px;
+}
+
+#thankForRegistrationDiv {
+	position: absolute;
+	width: 800px;
+	height: 200px;
+	z-index: 15;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

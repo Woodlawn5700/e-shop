@@ -1,0 +1,5 @@
+projectKey=com.mycompany.app:my-webapp
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/com.mycompany.app:my-webapp
+ceTaskId=AViV3d-n1TlQ5HtIImSc
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AViV3d-n1TlQ5HtIImSc
